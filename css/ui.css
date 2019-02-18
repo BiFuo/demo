@@ -1,0 +1,229 @@
+/*搜索*/
+.ui-search{
+    background: url("../images/ui-search.jpg")no-repeat center;
+    font-size: 14px;
+    color: #fff;
+    position: relative;
+}
+.ui-search-selected{
+    width: 70px;
+    height: 38px;
+    line-height: 38px;
+    position: absolute;
+    left: 0;
+    top: 0;text-indent: 14px;
+}
+.ui-search-select-list{
+    position: absolute;
+    width: 67px;
+    line-height: 24px;
+    background-color: #fff;
+    box-shadow: 3px 3px 5px rgba(0,0,0,0.2);
+    left: 2px;
+    top:36px;
+    z-index:99999;
+}
+.ui-search-select-list a{
+    display: block;
+    color: #A5a2a2;
+    text-align: center;
+}
+.ui-search-select-list a:hover{
+    background-color: #ebeef5;
+}
+.ui-search-input{
+    width: 208px;
+    height: 26px;
+    position: absolute;
+    left: 73px;
+    line-height: 26px;
+    top:6px;
+    font-size: 13px;
+    color: #A5a2a2;
+}
+
+.ui-search-submit{
+    display: block;
+    position: absolute;
+    right: 0;
+    top:1px;
+    width: 40px;
+    height: 36px;
+}
+
+/*ui-menu 分类菜单*/
+.ui-menu{
+    z-index: 999;
+}
+
+.ui-menu-item{
+    height: 22px;
+    line-height: 22px;
+    padding:8px 5px 9px 6px;
+    margin-left: 1px;
+}
+.ui-menu-item:hover{
+    background-color: #fff;
+    color: #333;
+}
+.ui-menu-item-department{
+    float: left;
+    height: 22px;
+    line-height: 22px;
+    position: relative;
+    padding-left: 30px;
+    font-size: 14px;
+    color: #fff;
+}
+.ui-menu-item-department:before{
+    content: ' ';
+    display: block;
+    width: 22px;
+    height: 21px;
+    position: absolute;
+    left: 0;
+    top:1px;
+    background: url("../images/icon-menu.jpg") -22.3px 0 no-repeat;
+}
+.ui-menu-item-disease{
+    font-size: 12px;
+    float: right;
+    padding-left: 5px;
+    color: #d7f3ff;
+}
+.ui-menu-item:hover .ui-menu-item-department:before{
+    background-position: 0.2px 0;
+}
+.ui-menu-item:nth-child(2) .ui-menu-item-department:before{
+    background-position-y: -22px;
+}
+.ui-menu-item:nth-child(3) .ui-menu-item-department:before{
+    background-position-y: -44px;
+}
+.ui-menu-item:nth-child(4) .ui-menu-item-department:before{
+    background-position-y: -66px;
+}
+
+
+.ui-menu-item:hover .ui-menu-item-department{
+    color: #333;
+}
+.ui-menu-item-disease:hover .ui-menu-item-disease{
+    color: #868686;
+}
+.ui-menu-item:hover .ui-menu-item-detail{
+    display: block;
+}
+.ui-menu-item-detail{
+    display: none;
+    position: absolute;
+    height: 384px;
+    width: 500px;
+    padding: 20px 10px 10px 29px;
+    background: #fff url("../images/bg-menu.jpg");
+    top:0;
+    left: 189px;
+    box-shadow: rgba(0,0,0,0.1);
+}
+.ui-menu-item-detail-group{
+    padding-bottom: 20px;
+    text-align: left;
+}
+.ui-menu-item-detail-group-caption{
+    width:100%;
+    display: block;
+    height: 34px;
+    line-height: 34px;
+    color: #666;
+    font-size: 16px;
+    font-weight: bold;
+}
+.ui-menu-item-detail-group-list{
+    line-height: 23px;
+}
+.ui-menu-item-detail-group-list a{
+    display: inline-block;
+    color: #868686;
+    margin-right: 8px;
+    font-size: 12px;
+    padding-bottom: 5px;
+}
+.ui-menu-item-detail-group-list a:after{
+    content: '|';
+    color: #ddd;
+    padding-left: 8px;
+}
+/*轮播图*/
+.slider-panel img, .slider-extra {
+    width: 551px;
+    height: 414px;
+}
+.slider{
+    position: relative;
+}
+.slider-panel, .slider-nav, .slider-pre, .slider-next {
+    position: absolute;
+    z-index: 8;
+}
+.slider-panel {
+    position: absolute;
+}
+.slider-panel img {
+    border: none;
+}
+/*点击的图标*/
+.slider-extra {
+    position: relative;
+}
+.slider-nav {
+    margin-left: -51px;
+    position: absolute;
+    left: 50%;
+    bottom: 4px;
+}
+.slider-nav li {
+    background: #3e3e3e;
+    border-radius: 50%;
+    color: #fff;
+    cursor: pointer;
+    margin: 0 2px;
+    overflow: hidden;
+    text-align: center;
+    display: inline-block;
+    height: 18px;
+    line-height: 18px;
+    width: 18px;
+}
+.slider-nav .slider-item-selected{
+    background:#036eb7;
+}
+.slider-page a{
+    background: rgba(0, 0, 0, 0.2);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#33000000,endColorstr=#33000000);
+    color: #fff;
+    text-align: center;
+    display: block;
+    font-family: "simsun";
+    font-size: 22px;
+    width: 28px;
+    height: 62px;
+    line-height: 62px;
+    margin-top: -31px;
+    position: absolute;
+    top: 50%;
+}
+.slider-page a:hover {
+    background: rgba(0, 0, 0, 0.4);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#66000000,endColorstr=#66000000);
+}
+.slider-next {
+    left: 100%;
+    margin-left: -28px;
+}
+
+
+
+
+
+
+

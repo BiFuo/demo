@@ -1,0 +1,329 @@
+p{
+    margin: 0;
+    padding: 0;
+    display: inline-block; /*一整行*/
+}
+/*top样式*/
+
+.top{
+    line-height: 30px;
+    font-size: 13px;
+    color: #868686;
+}
+.top .welcome{
+    float: right;
+}
+.top .call{
+    float: left;
+    padding-left: 20px;
+    margin-left: 20px;
+    background: url("../images/icon-call.png")no-repeat center left;
+}
+/*#hender样式*/
+
+.header .logo{
+    width: 402px;
+    height: 74px;
+    padding: 9px 0;
+    display: inline-block;
+}
+.header .logo img{
+    width: 100%;
+    height: 100%;
+}
+
+.header .search{
+    width: 326px;
+    height: 38px;
+    position: absolute;
+    right: 0;
+    top:29px;
+    /*background-color: orange;*/
+}
+/*#nav样式*/
+
+.nav .link{
+    display: inline-block;
+    line-height: 36px;
+    float: left;
+    padding-left:30px;
+    color:#fff;
+    font-size: 16px;
+    min-width: 80px;
+    text-align: center;
+}
+.nav a:hover{
+    color: #d7f3ff;
+}
+.nav .menu{
+    width: 130px;
+    padding-right: 30px;
+    background-color: #1fa4f0;
+    position: relative;
+}
+.nav .menu .menu-list{
+    background-color: #1fa4f0;
+    height: 414px;
+    width: 100%;
+    left: 0;
+    top:36px;
+    position: absolute;
+}
+/*去掉边框自带的颜色*/
+select,input{
+    border: none;
+    outline: none;
+}
+/*#banner样式*/
+
+.banner-search{
+    background-color: #fafafa;
+}
+
+.banner-search .caption, .banner-help .caption{
+    height: 22px;
+    padding: 15px 15px;
+    text-align: center;
+}
+.banner-search .caption .text, .banner-help .caption .text{
+    display: inline-block;
+    height: 22px;
+    line-height: 22px;
+    padding-left: 28px;
+    color: #fec009;
+    font-size: 16px;
+    background: url("../images/icon-help.png")no-repeat 0 0;
+}
+
+.banner-search .form{
+    height: 150px;
+}
+
+.banner-search .form .line{
+    padding-bottom: 9px;
+    text-align: center;
+}
+.banner-search .form .line select{
+    width: 170px;
+    font-size: 12px;
+    z-index: 0;
+    border: 1px solid #dcdddd;
+    height: 26px;
+    line-height: 26px;
+    padding: 2px 0;
+    color: #666;
+}
+
+.banner-search .submit{
+    height: 32px;
+    text-align: center;
+}
+.banner-search .submit .button{
+    width: 108px;
+    height: 33px;
+    background-color: #fecd09;
+    font-size: 14px;
+    color:#fff;
+    border-radius: 3px;
+}
+
+.banner-help{
+    background-color: #fafafa;
+}
+.banner-help .caption .text{
+    color: #00b3ea;
+    background-position: 0 -23px;/*改变图标*/
+}
+.banner-help .link{
+    color: #00b3ea;
+    display: inline-block;
+    width: 86px;
+    height: 26px;
+    line-height: 26px;
+    font-size: 14px;
+    text-align: center;
+    padding: 0 0 8px 26px;
+}
+
+
+/*#conetent样式*/
+/*#conetent样式里的右边栏*/
+.content-news, .content-close{
+    background-color: #fff;
+    border: 1px solid #f4f6fa;
+}
+.content-news .caption, .content-close .caption{
+    height: 38px;
+    line-height: 38px;
+    background-color: #f4f6fa;
+    text-indent: 20px;
+    color: #fec009;
+    font-size: 15px;
+}
+.content-news .more, .content-close .more{
+    float: right;
+    padding-right: 22px;
+    font-size: 12px;
+    color: #868686;
+}
+.content-news .list, .content-close .list{
+    padding: 15px 20px 15px 35px;
+    font-size: 12px;
+    line-height: 29px;
+    background: url("../images/list-yellow.jpg")17px 20px no-repeat;
+}
+.content-news .list .link, .content-close .list .link{
+    display: block;
+    color: #969696;
+}
+.content-close .caption{
+    color: #4ab4ed;
+}
+.content-close .list{
+    background: url("../images/list-blue.jpg")17px 20px no-repeat;
+}
+/*#conetent样式里的左边大内容栏*/
+
+.content-tab{
+    background:none;
+}
+.content-tab .caption{
+    height: 34px;
+    line-height: 34px;
+    background-color: #f5f6fa;
+}
+.content-tab .caption .item{
+    display: block;
+    width: 112px;
+    height: 34px;
+    text-align: center;
+    float: left;
+    color: #00b3ea;
+}
+.content-tab .caption .item_focus{
+    background-color: #606ff2;
+    color: #fff;
+}
+.content-tab .block{
+    border: 1px solid #f4f6fa;
+    height: 452px;
+}
+
+.content-tab .block-caption{
+    height: 26px;
+    line-height: 26px;
+    padding: 8px;
+    border-bottom: 1px solid #f4f6fa;
+}
+
+.content-tab .block-caption-item{
+    display: block;
+    padding: 0 10px 0 10px;
+    font-size: 12px;
+    color: #4c4948;
+    float: left;
+}
+.content-tab .block-caption-item_focus{
+    background-color: #606ff2;
+    color: #fff;
+}
+.content-tab .block-content{
+    padding: 16px 12px;
+}
+/*医院列表容器*/
+.content-tab .block-content .block-list{}
+.content-tab .block-content .block-list .item{
+    float: left;
+    width: 216px;
+    height: 102px;
+    padding: 0 20px 10px 120px;
+    position: relative;
+    font-size: 12px;
+}
+.content-tab .block-content .block-list .item img{
+    width: 110px;
+    height: 98px;
+    position: absolute;
+    left: 0;
+    top:0;
+}
+.content-tab .block-content .block-list .item-name{
+    color: #036eb7;
+    font-size: 14px;
+    line-height: 21px;
+    padding-top: 13px;
+}
+.content-tab .block-content .block-list .item-level{
+    float: right;
+    font-size: 12px;
+    color: #979797;
+}
+.content-tab .block-content .block-list .item-phone,
+.content-tab .block-content .block-list .item-address{
+    line-height: 18px;
+    padding-bottom: 4px;
+    color: #666666;
+}
+
+/*医院列表容器 -文案列表*/
+.content-tab .block-content .block-text-list{}
+.content-tab .block-content .block-text-list .item{
+    display: block;
+    width: 351px;
+    height: 27px;
+    font-size: 14px;
+    color: #666;
+    padding-top: 8px;
+    float: left;
+    border-bottom: 1px dashed #dcdddd;
+}
+.content-tab .block-content .block-text-list .item:nth-child(2n){
+    margin-left: 13px;
+}
+
+/*医院列表容器最底部*/
+.content-tab .block-content .block-more{
+    display: block;
+    line-height: 55px;
+    text-align: center;
+    color: #5084c4;
+    font-size: 14px;
+}
+
+
+/*footer*/
+.footer{
+    height: 70px;
+    text-align: center;
+    color: #666;
+    font-size: 14px;
+}
+/*回到顶部*/
+.back-footer{
+    position: fixed;
+    bottom:30px;
+    right: 15px;
+}
+.back-footer a{
+    text-align: center;
+    text-decoration: none;
+    color: #d1d1d1;
+    display: block;
+    width: 50px;
+    -moz-transition: color 1s;
+    -webkit-transition: color 1s;
+}
+.back-footer a span{
+    border-radius: 6px;
+    display: block;
+    height: 50px;
+    width: 50px;
+    margin-bottom: 5px;
+    -moz-transition: background 1s;
+    -webkit-transition: background 1s;
+}
+
+
+
+
+
